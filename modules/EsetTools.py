@@ -155,9 +155,9 @@ class EsetKeygen(object):
         # upd 21.10.2025
         time.sleep(0.5)
         self.__press_button_with_text('continue')
-        uCE(self.driver, f"return {GET_EBAV}('input', 'data-label', 'member-add-account-owner-input-input') != null")
+        uCE(self.driver, f"return {GET_EBAV}('input', 'data-label', 'register-email-input-input') != null")
         try:
-            input_field = exec_js(f"return {GET_EBAV}('input', 'data-label', 'member-add-account-owner-input-input')")
+            input_field = exec_js(f"return {GET_EBAV}('input', 'data-label', 'register-email-input-input')")
             input_field.send_keys(dataGenerator(random.randint(6, 12)))
         except:
             raise RuntimeError('Error when filling out form!!!')
