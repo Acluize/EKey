@@ -132,9 +132,6 @@ class EsetKeygen(object):
         uCE(self.driver, f"return {CLICK_WITH_BOOL}({GET_EBAV}('button', 'data-label', 'onboarding-welcome-skip-introduction-btn'))")
         uCE(self.driver, f"return {CLICK_WITH_BOOL}({GET_EBAV}('label', 'data-label', 'onboarding-add-subscription-protect-card-trial'))")
         self.__press_button_with_text('continue')
-
-        time.sleep(0.5)
-        self.__press_button_with_text('continue')
     
         uCE(self.driver, f"return {GET_EBAV}('label', 'data-label', 'onboarding-trial-protect-card-148') != null")
         if self.mode == 'ESET HOME':
