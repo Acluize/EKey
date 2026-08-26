@@ -1,4 +1,4 @@
-name: Generator Auto HOME
+name: Generator Auto
 
 on:
   #schedule:
@@ -17,7 +17,7 @@ jobs:
           KEY_TYPE=--key
           BRANCH=main
 
-          git clone -b ${BRANCH} https://github.com/373262/EKey.git
+          git clone -b ${BRANCH} https://github.com/shadowcopyrz/etkg.git
           cd EKey
 
           sudo apt update
